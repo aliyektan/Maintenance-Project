@@ -15,6 +15,9 @@ Password: admin1234
 
 ÖZET:
 - Proje modüler yapıldı.
+   - Core: Tüm dao ve entitiy sınıflarının bulunduğu modül
+   - Middleware: Restful servisler ve schedule sınıfarının bulunduğu modül
+   - Web: web.xml, faces-config.xml, .xhtml arayüz dosyaları, listener classlarının bulunduğu modül.
 - Schedule işlemleri yapıldı.
 - Ürün yapısı esnek tutuldu.
 - Gerekli javadoclar yazıldı.
@@ -33,5 +36,4 @@ KURULUM:
 3. Proje klasörüne girerek 'mvn compile','mvn package' komutlarını sırasıyla çalıştırınız.
 4. Maven çıktısı olan 'Web:war exploded' artifact'ını servera deploy ediniz.
 5. Projeyi koşturabilirsiniz.
-
-NOT: MySQL serverinizin Online olduğundan emin olunuz.
+6. Schedule işlemi için, middleware modülündeki schedule.trigger paketindeki trigger sınıfını koşturunuz.
